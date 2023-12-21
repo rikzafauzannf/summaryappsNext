@@ -19,7 +19,7 @@ export default async function Bageur() {
     return (
       <>
         <h1 className="text-2xl font-bold mb-3">Dashboard Bageur</h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
           {data.map((item) => {
             return (
               <CardBageur

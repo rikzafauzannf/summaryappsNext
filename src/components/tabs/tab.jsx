@@ -9,7 +9,7 @@ export default function MyTabs({ tabs }) {
           return (
             <Tab
               key={index}
-              className={"btn btn-md rounded-lg bg-slate-500 text-white px-7"}
+              className={"btn btn-md rounded-lg bg-gray-500 text-white px-7"}
             >
               {item.label}
             </Tab>

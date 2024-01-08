@@ -13,7 +13,6 @@ export default async function Semai() {
 
     // Memastikan bahwa respons dari API adalah dalam format JSON
     const data = await responseSetaman.json();
-
     // Memastikan bahwa respons dari API berisi data yang diharapkan
     if (!data || !Array.isArray(data)) {
       throw new Error("Invalid data format received from the API");

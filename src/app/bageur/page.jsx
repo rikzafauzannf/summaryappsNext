@@ -10,6 +10,7 @@ export default async function Bageur() {
 
     // Memastikan bahwa respons dari API adalah dalam format JSON
     const data = await responseBageur.json();
+    const countData = data.length*3;
 
     // Memastikan bahwa respons dari API berisi data yang diharapkan
     if (!data || !Array.isArray(data)) {
@@ -19,6 +20,7 @@ export default async function Bageur() {
     return (
       <>
         <h1 className="text-2xl font-bold mb-3">Dashboard Bageur</h1>
+        <p>{countData}</p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
           {data.map((item) => {
             return (
